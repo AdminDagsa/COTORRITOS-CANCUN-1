@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
-import mx from "../images/mx.png"
+import mx from "../images/mxn.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 

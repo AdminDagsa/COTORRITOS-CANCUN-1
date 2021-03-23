@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
-import us from "../images/us.png"
+import us from "../images/usa.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 
