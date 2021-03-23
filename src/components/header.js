@@ -1,42 +1,22 @@
-import * as React from "react"
-import PropTypes from "prop-types"
+import React from "react"
 import { Link } from "gatsby"
+import "../css/style.css"
+import logo from "../images/logo.png"
+import placa from "../images/placa.png"
+import hojai from "../images/hoja-i.png"
+import hojad from "../images/hoja-d.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+export default function Header() {
+  return (
+    <header className="header-area">
+      <div className="div-relative">
+        <img className="placa-image" alt="" src={placa} />
+        <Link className="link-image" to="/">
+          <img className="logo-image" alt="" src={logo} />
         </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+        <img className="hojad-image" alt="" src={hojad} />
+        <img className="hojai-image" alt="" src={hojai} />
+      </div>
+    </header>
+  )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

@@ -1,0 +1,402 @@
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  margin: 0;
+}
+
+/*=============Header=============*/
+.header-area {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/back-v.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.div-relative {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.link-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0px;
+  right: 0px;
+}
+
+.placa-image {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 140px;
+  z-index: 10;
+}
+
+@media (min-width: 240px) {
+  .logo-image {
+    width: 95%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    transform: rotate(-2deg);
+    position: absolute;
+    top: 0px;
+    z-index: 7;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo-image {
+    width: 85%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    transform: rotate(-2deg);
+    position: absolute;
+    top: 0px;
+    z-index: 7;
+  }
+}
+
+@media (min-width: 400px) {
+  .logo-image {
+    width: 70%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    transform: rotate(-2deg);
+    position: absolute;
+    top: 0px;
+    z-index: 7;
+  }
+}
+
+.hojai-image {
+  width: 140px;
+  height: 90px;
+  position: absolute;
+  top: 60px;
+  margin-right: auto;
+  margin-top: auto;
+  z-index: 6;
+}
+
+.hojad-image {
+  width: 140px;
+  height: 90px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  margin-left: auto;
+  z-index: 5;
+}
+
+/*=============Menu=============*/
+.menu-area {
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
+}
+
+.menu-div {
+  padding: 15px;
+}
+
+.link-button {
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.menu-button {
+  background-color: #fa4d31;
+  color: #feef52;
+  border: none;
+  width: 85%;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.grid-container-icons {
+  display: grid;
+  width: 85%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+}
+
+.link-img {
+  padding: auto;
+  width: 100%;
+  text-decoration: none;
+}
+
+.link-scl {
+  padding: auto;
+  width: 100%;
+  text-decoration: none;
+}
+
+.menu-img {
+  background-color: #fa4d31;
+  float: right;
+  border: none;
+  width: 36px;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-scl {
+  background-color: #fa4d31;
+  border: none;
+  width: 36px;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-button:hover {
+  background-color: #fd553b;
+}
+
+.drink-area-alimentos {
+  width: 100%;
+  height: auto;
+}
+
+.drink-div {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 200px;
+}
+
+.drink-area-alimentos-2 {
+  width: 100%;
+  height: auto;
+}
+
+/*=============Index=============*/
+.index {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #ffb94f;
+  background-image: url("../images/back-h.jpg");
+  background-size: cover;
+}
+
+/*=============Drink=============*/
+.drink-area {
+  width: 100%;
+  height: auto;
+}
+
+/*=============Navbar=============*/
+.navbar-area {
+  width: 100%;
+  height: 50px;
+  background-color: #ffb94f;
+}
+
+.grid-container-navbar {
+  display: grid;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  grid-template-columns: 17% 66% 17%;
+}
+
+.grid-container-navbar-sec {
+  display: grid;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar-icon {
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+  margin-top: 3.5px;
+  background-color: #fa4d31;
+  border-radius: 5px;
+}
+
+.menu-scl-nav {
+  width: 35px;
+  height: 35px;
+  padding: 4px;
+  margin-top: 3.5px;
+  background-color: #fa4d31;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*=============Footer=============*/
+@media (min-height: 240px) {
+  .footer-1 {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (min-height: 590px) {
+  .footer-1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+@media (min-height: 240px) {
+  .footer-2 {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (min-height: 600px) {
+  .footer-2 {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+@media (min-height: 240px) {
+  .footer-3 {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media (min-height: 520px) {
+  .footer-3 {
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+  }
+}
+
+.footer-area {
+  width: 100%;
+  height: 110px;
+  margin-top: auto;
+  margin-bottom: 0px;
+  background-image: url("../images/back-v.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.div-relative-footer {
+  position: relative;
+  width: 100%;
+  height: 110px;
+}
+
+.direccion-image {
+  width: 42%;
+  position: absolute;
+  max-width: 190px;
+  height: auto;
+  right: 20px;
+  top: 30px;
+  margin-left: auto;
+  z-index: 12;
+}
+
+@media (min-width: 240px) {
+  .cotorrito-image {
+    width: 125px;
+    height: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 19px;
+    z-index: 11;
+  }
+}
+
+@media (min-width: 320px) {
+  .cotorrito-image {
+    width: 145px;
+    height: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 5px;
+    z-index: 11;
+  }
+}
+
+.hojai-image-footer {
+  width: 90px;
+  height: 70px;
+  position: absolute;
+  top: 40px;
+  margin-right: auto;
+  margin-top: auto;
+  z-index: 6;
+}
+
+.hojad-image-footer {
+  width: 90px;
+  height: 60px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  margin-left: auto;
+  z-index: 5;
+}
+
+.placa-image-footer {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+}

@@ -1,17 +1,17 @@
 import React from "react"
 import SEO from "../components/seo"
-import Menu from "../components/menu"
 import Footer from "../components/footer"
+import Menu_en from "../components/menu_en"
 import "../css/style.css"
 
-const IndexPage = () => (
+const EnPage = () => (
   <>
-    <SEO title="Menú" />
-    <Menu />
+    <SEO title="Menu" />
+    <Menu_en />
     <div className="footer-1">
       <Footer />
     </div>
   </>
 )
 
-export default IndexPage
+export default EnPage
