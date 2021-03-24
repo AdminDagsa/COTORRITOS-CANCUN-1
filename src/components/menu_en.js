@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
 import mx from "../images/mxn.png"
@@ -17,6 +17,9 @@ export default function Menu_en() {
         </Link>
         <Link className="link-button" to="/drinks">
           <button className="menu-button">Drinks</button>
+        </Link>
+        <Link className="link-button" to="/liters">
+          <button className="menu-button">Liters</button>
         </Link>
         <div className="grid-container-icons">
           <Link

@@ -18,6 +18,9 @@ export default function Menu() {
         <Link className="link-button" to="/bebidas">
           <button className="menu-button">Bebidas</button>
         </Link>
+        <Link className="link-button" to="/litros">
+          <button className="menu-button">Cotolitros</button>
+        </Link>
         <div className="grid-container-icons">
           <Link
             className="link-scl"
