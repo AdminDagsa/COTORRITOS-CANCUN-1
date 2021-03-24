@@ -7,13 +7,13 @@ import bebidas from "../images/bebidas.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 
-export default function NavShot() {
+export default function NavLiter() {
   return (
     <section className="navbar-area">
       <div className="grid-container-navbar">
         <Link
           className="link-scl"
-          to="https://www.facebook.com/cotorritoscdmx"
+          to="https://www.facebook.com/Cotorritos-Canc%C3%BAn-101460131946969"
           target="_blank"
         >
           <img className="menu-scl-nav" alt="" src={fb} />
@@ -31,7 +31,7 @@ export default function NavShot() {
         </div>
         <Link
           className="link-scl"
-          to="https://www.instagram.com/cotorritos_cdmx"
+          to="https://www.instagram.com/cotorritoscancun/"
           target="_blank"
         >
           <img className="menu-scl-nav" alt="" src={ins} />

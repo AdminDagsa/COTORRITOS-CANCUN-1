@@ -5,6 +5,7 @@ import mar from "../images/marisco.png"
 import bebidas from "../images/bebidas.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
+import jarra from "../images/jarra.png"
 
 export default function Navbar() {
   return (
@@ -12,7 +13,7 @@ export default function Navbar() {
       <div className="grid-container-navbar">
         <Link
           className="link-scl"
-          to="https://www.facebook.com/cotorritoscdmx"
+          to="https://www.facebook.com/Cotorritos-Canc%C3%BAn-101460131946969"
           target="_blank"
         >
           <img className="menu-scl-nav" alt="" src={fb} />
@@ -24,10 +25,13 @@ export default function Navbar() {
           <Link className="link-button" to="/bebidas">
             <img className="navbar-icon" alt="" src={bebidas} />
           </Link>
+          <Link className="link-button" to="/litros">
+            <img className="navbar-icon" alt="" src={jarra} />
+          </Link>
         </div>
         <Link
           className="link-scl"
-          to="https://www.instagram.com/cotorritos_cdmx"
+          to="https://www.instagram.com/cotorritoscancun/"
           target="_blank"
         >
           <img className="menu-scl-nav" alt="" src={ins} />

@@ -13,14 +13,8 @@ export default function Footer() {
         <img className="hojai-image-footer" alt="" src={hojai} />
         <img className="hojad-image-footer" alt="" src={hojad} />
         <img className="placa-image-footer" alt="" src={placa} />
-        <img
-          className="cotorrito-image"
-          alt=""
-          src={
-            cotorrito
-          } /* />
-       <img className="direccion-image" alt="" src={direccion} */
-        />
+        <img className="cotorrito-image" alt="" src={cotorrito} />
+        <img className="direccion-image" alt="" src={direccion} />
       </div>
     </section>
   )

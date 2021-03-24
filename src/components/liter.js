@@ -1,13 +1,13 @@
-import * as React from "react"
+import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import "../css/style.css"
-import menu from "../images/menu.jpg"
+import liters from "../images/liters.jpg"
 
-export default function Alimentos() {
+export default function Liter() {
   const data = useStaticQuery(graphql`
-    query Alimentos {
-      menu: file(relativePath: { eq: "menu.jpg" }) {
+    query Shots {
+      drinks: file(relativePath: { eq: "liters.jpg" }) {
         childImageSharp {
           fluid {
             src
@@ -21,17 +21,17 @@ export default function Alimentos() {
   `)
 
   return (
-    <section className="drink-area-alimentos">
-      <div>
-        <div>
+    <section className="drink-area">
+      <div className="grid-container-courses">
+        <div className="grid-item-courses">
           <Img
             className="drink-image"
             alt=""
-            fluid={data.menu.childImageSharp.fluid}
+            fluid={data.drinks.childImageSharp.fluid}
           />
         </div>
         <div className="drink-div">
-          <img className="drink-area-alimentos-2" alt="" src={menu} />
+          <img className="drink-area-alimentos-2" alt="" src={liters} />
         </div>
       </div>
     </section>
