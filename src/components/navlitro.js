@@ -6,6 +6,7 @@ import mar from "../images/marisco.png"
 import bebidas from "../images/bebidas.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
+import shot from "../images/shot.png"
 
 export default function NavLitro() {
   return (
@@ -27,6 +28,9 @@ export default function NavLitro() {
           </Link>
           <Link className="link-button" to="/bebidas">
             <img className="navbar-icon" alt="" src={bebidas} />
+          </Link>
+          <Link className="link-button" to="/shots">
+            <img className="navbar-icon" alt="" src={shot} />
           </Link>
         </div>
         <Link
