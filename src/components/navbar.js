@@ -6,6 +6,7 @@ import bebidas from "../images/bebidas.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 import jarra from "../images/jarra.png"
+import shot from "../images/shot.png"
 
 export default function Navbar() {
   return (
@@ -27,6 +28,9 @@ export default function Navbar() {
           </Link>
           <Link className="link-button" to="/litros">
             <img className="navbar-icon" alt="" src={jarra} />
+          </Link>
+          <Link className="link-button" to="/shots">
+            <img className="navbar-icon" alt="" src={shot} />
           </Link>
         </div>
         <Link

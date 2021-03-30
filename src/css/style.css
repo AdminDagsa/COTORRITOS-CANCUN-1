@@ -243,15 +243,15 @@ body {
   width: 100%;
   height: auto;
   margin: auto;
-  grid-template-columns: 17% 66% 17%;
+  grid-template-columns: 1fr 4fr 1fr;
 }
 
 .grid-container-navbar-sec {
   display: grid;
-  width: 80%;
+  width: 85%;
   height: 50px;
   margin: auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .navbar-icon {
@@ -284,7 +284,7 @@ body {
   }
 }
 
-@media (min-height: 695px) {
+@media (min-height: 784px) {
   .footer-1 {
     position: absolute;
     width: 100%;
