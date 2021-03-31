@@ -1,12 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import "../css/style.css"
-import popup from "../images/popup.png"
+import close from "../images/close.png"
 
 export default function Popup1() {
   const data = useStaticQuery(graphql`
-    query Popup {
+    query Popup1 {
       popup: file(relativePath: { eq: "popup.png" }) {
         childImageSharp {
           fluid {
@@ -21,17 +22,21 @@ export default function Popup1() {
   `)
 
   return (
-    <section className="drink-area">
-      <div>
-        <div>
-          <div>
-            <Img
-              className="drink-image"
-              alt=""
-              fluid={data.popup.childImageSharp.fluid}
-            />
-          </div>
-          <div className="drink-div"></div>
+    <section className="popup1-section">
+      <input type="checkbox" id="cerrar" />
+      <label for="cerrar" className="popup-button">
+        <img src={close} className="popup1-close" />
+      </label>
+      <div className="popup1-modal">
+        <div className="popup1-content">
+          <Img
+            className="popup1-image"
+            alt=""
+            fluid={data.popup.childImageSharp.fluid}
+          />
+          <Link to="/litros" className="popup1-menu">
+            <div className="div-btn"></div>
+          </Link>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import mx from "../images/mxn.png"
 import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 
-export default function Menu_en() {
+export default function Menuen() {
   return (
     <section className="menu-area">
       <div className="menu-div">

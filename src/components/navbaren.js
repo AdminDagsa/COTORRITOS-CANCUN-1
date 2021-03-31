@@ -8,7 +8,7 @@ import fb from "../images/fb.png"
 import ins from "../images/ins.png"
 import shot from "../images/shot.png"
 
-export default function Navbar_en() {
+export default function Navbaren() {
   return (
     <section className="navbar-area">
       <div className="grid-container-navbar">
