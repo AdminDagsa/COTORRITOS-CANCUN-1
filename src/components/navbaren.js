@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../css/style.css"
-import mar from "../images/marisco.png"
 import bebidas from "../images/bebidas.png"
 import jarra from "../images/jarra.png"
 import fb from "../images/fb.png"
@@ -20,9 +19,6 @@ export default function Navbaren() {
           <img className="menu-scl-nav" alt="" src={fb} />
         </Link>
         <div className="grid-container-navbar-sec">
-          <Link className="link-button" to="/seafood">
-            <img className="navbar-icon" alt="" src={mar} />
-          </Link>
           <Link className="link-button" to="/drinks">
             <img className="navbar-icon" alt="" src={bebidas} />
           </Link>

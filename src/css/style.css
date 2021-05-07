@@ -201,18 +201,27 @@ body {
 .drink-area-alimentos {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .drink-div {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 200px;
+  top: 0;
 }
 
 .drink-area-alimentos-2 {
   width: 100%;
   height: auto;
+}
+
+.placa-image-drink {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  z-index: 10;
+  margin-top: -8px;
 }
 
 /*=============Index=============*/
@@ -229,6 +238,7 @@ body {
 .drink-area {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 /*=============Navbar=============*/
@@ -243,7 +253,7 @@ body {
   width: 100%;
   height: auto;
   margin: auto;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .grid-container-navbar-sec {
@@ -251,7 +261,7 @@ body {
   width: 85%;
   height: 50px;
   margin: auto;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .navbar-icon {
@@ -483,7 +493,7 @@ body {
 .popup1-menu {
   position: fixed;
   margin: auto;
-  top: 47%;
+  top: 50%;
   left: 30%;
   z-index: 102;
   font-size: 32px;
@@ -494,6 +504,105 @@ body {
 }
 
 @keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/*=============Popup=============*/
+.popup2-section {
+}
+
+.popup2-modal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  animation: modal2 0.5s;
+  animation-delay: 45s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup2-content {
+  width: 100%;
+  height: auto;
+  max-height: 95vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media all and (orientation: landscape) {
+  .popup2-content {
+    width: 66vh;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.popup2-image {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 8px;
+}
+
+#cerrar2:checked + label,
+#cerrar2:checked ~ .popup2-modal {
+  display: none;
+}
+
+#cerrar2 {
+  display: none;
+}
+
+#cerrar2 + label {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 101;
+  animation: modal2 0.5s;
+  animation-delay: 45s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup2-close {
+  width: 32px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.popup2-close:hover {
+  width: 35px;
+}
+
+.popup2-menu {
+  position: fixed;
+  margin: auto;
+  top: 47%;
+  left: 30%;
+  z-index: 102;
+  font-size: 32px;
+  background-color: transparent;
+  width: 40%;
+  height: 9%;
+  cursor: pointer;
+}
+
+@keyframes modal2 {
   100% {
     visibility: visible;
     opacity: 1;

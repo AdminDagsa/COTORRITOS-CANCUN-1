@@ -12,9 +12,6 @@ export default function Menu() {
         <Link className="link-button" to="/alimentos">
           <button className="menu-button">Menú</button>
         </Link>
-        <Link className="link-button" to="/mariscos">
-          <button className="menu-button">Mariscos</button>
-        </Link>
         <Link className="link-button" to="/bebidas">
           <button className="menu-button">Bebidas</button>
         </Link>
