@@ -8,7 +8,7 @@ import close from "../images/close.png"
 export default function Popup1() {
   const data = useStaticQuery(graphql`
     query Popup1 {
-      popup: file(relativePath: { eq: "popup.png" }) {
+      popup: file(relativePath: { eq: "popup2.png" }) {
         childImageSharp {
           fluid {
             src
@@ -34,7 +34,7 @@ export default function Popup1() {
             alt=""
             fluid={data.popup.childImageSharp.fluid}
           />
-          <Link to="/litros" className="popup1-menu">
+          <Link to="/alimentos#mariscos" className="popup1-menu">
             <div className="div-btn"></div>
           </Link>
         </div>

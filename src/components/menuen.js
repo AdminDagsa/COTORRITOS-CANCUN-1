@@ -12,9 +12,6 @@ export default function Menuen() {
         <Link className="link-button" to="/dishes">
           <button className="menu-button">Menu</button>
         </Link>
-        <Link className="link-button" to="/seafood">
-          <button className="menu-button">Seafood</button>
-        </Link>
         <Link className="link-button" to="/drinks">
           <button className="menu-button">Drinks</button>
         </Link>
